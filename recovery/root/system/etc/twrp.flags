@@ -1,0 +1,32 @@
+# mount point	fstype		device			device2			flags
+# Symlinked partitions
+/system_image		emmc	 /dev/block/platform/17100000.ufs/by-name/system		flags=backup=0;flashimg;display="System Image"
+/vendor_image		emmc	 /dev/block/platform/17100000.ufs/by-name/vendor		flags=backup=0;flashimg;display="Vendor Image"
+/product_image		emmc	 /dev/block/platform/17100000.ufs/by-name/product		flags=backup=0;flashimg;display="Product Image"
+/odm_image		    emmc	 /dev/block/platform/17100000.ufs/by-name/odm		    flags=backup=0;flashimg;display="Odm Image"
+/system_ext_image	emmc	 /dev/block/platform/17100000.ufs/by-name/system_ext	flags=backup=0;flashimg;display="System_EXT Image"
+/vendor_dlkm_image	emmc	 /dev/block/platform/17100000.ufs/by-name/vendor_dlkm	flags=backup=0;flashimg;display="Vendor_DLKM Image"
+/system_dlkm_image	emmc	 /dev/block/platform/17100000.ufs/by-name/system_dlkm	
+
+# Physical partitions
+/metadata f2fs		 /dev/block/platform/17100000.ufs/by-name/metadata		flags=backup=1;wipeingui;display="Metadata"
+/boot		emmc		 /dev/block/platform/17100000.ufs/by-name/boot		    flags=backup=1;flashimg;display="Boot"
+/recovery	emmc		 /dev/block/platform/17100000.ufs/by-name/recovery		flags=backup=1;flashimg;display="Recovery"
+/init_boot	emmc		 /dev/block/platform/17100000.ufs/by-name/init_boot		flags=backup=1;flashimg;display="Init Boot"
+/cache	ext4		 /dev/block/platform/17100000.ufs/by-name/cache		    flags=backup=1;display="Cache"
+/persist	ext4		 /dev/block/platform/17100000.ufs/by-name/persist		flags=display="Persist"
+/efs		ext4		 /dev/block/platform/17100000.ufs/by-name/efs		    flags=backup=1;display="EFS"
+/sec_efs	ext4		 /dev/block/platform/17100000.ufs/by-name/sec_efs		flags=backup=1;display="SEC EFS"
+/modem	emmc		 /dev/block/platform/17100000.ufs/by-name/modem		flags=backup=1;display="Modem"
+/misc		emmc		 /dev/block/platform/17100000.ufs/by-name/misc
+/dtbo		emmc		 /dev/block/platform/17100000.ufs/by-name/dtbo		flags=backup=1;flashimg;display="Dtbo"
+/optics_image	emmc		 /dev/block/platform/17100000.ufs/by-name/optics		flags=backup=1;flashimg;display="Optics Image"
+/prism_image	emmc		 /dev/block/platform/17100000.ufs/by-name/prism		flags=backup=1;flashimg;display="Prism Image"
+/vbmeta_system	emmc		 /dev/block/platform/17100000.ufs/by-name/vbmeta_system
+/vendor_boot	emmc		 /dev/block/platform/17100000.ufs/by-name/vendor_boot	flags=backup=1;flashimg;display="Vendor Boot"
+/vbmeta_samsung	emmc		 /dev/block/platform/17100000.ufs/by-name/vbmeta_samsung
+/vbmeta	emmc		 /dev/block/platform/17100000.ufs/by-name/vbmeta		flags=backup=1;flashimg;display="Vbmeta"
+/up_param emmc       /dev/block/platform/17100000.ufs/by-name/up_param     flags=backup=1;flashimg;display="Up_param"
+
+# Removable storage
+/usb-otg	vfat		/dev/block/sdf1	/dev/block/sdf			flags=display="USB-OTG";storage;wipeingui;removable
