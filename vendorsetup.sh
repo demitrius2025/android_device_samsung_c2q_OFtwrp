@@ -36,7 +36,7 @@ fi
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
  # Fox-specific flags
- export OF_QUICK_BACKUP_LIST="/boot;/data;/super;"
+ export OF_QUICK_BACKUP_LIST="/boot;/data;/super;/cache;/efs;/modem;/recovery;"
  ##export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/bootdevice/by-name/recovery_a"
  
  
