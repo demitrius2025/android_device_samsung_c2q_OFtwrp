@@ -22,11 +22,11 @@ on:
       DEVICE_PATH:
         description: 'Specify your device path.'
         required: true
-        default: 'device/xiaomi/marble'
+        default: 'device/samsung/e1s'
       DEVICE_NAME:
         description: 'Specify your Device Codename.'
         required: true
-        default: 'marble'
+        default: 'e1s'
       BUILD_TARGET:
         description: 'Specify your Build Target'
         required: true
