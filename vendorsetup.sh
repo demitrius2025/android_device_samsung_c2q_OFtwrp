@@ -53,12 +53,12 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  ##export FOX_REPLACE_BUSYBOX_PS=1
 
  # Version & Variant
- export FOX_VERSION="R12.1"
+ export FOX_MAINTAINER_PATCH_VERSION="R12.1"
  export FOX_VARIANT="A14"
  export FOX_BUILD_TYPE="Stable"
 
  # A/B partitioning
- export FOX_AB_DEVICE=1
+ # export FOX_AB_DEVICE=1
  ##export FOX_VIRTUAL_AB_DEVICE=1
  
  # Store settings at /data/recovery instead of internal storage
