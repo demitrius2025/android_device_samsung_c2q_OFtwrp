@@ -1,4 +1,4 @@
-# TWRP Device Tree for the Samsung Galaxy S24 5G (Exynos)
+# OFRP Device Tree for the Samsung Galaxy S24 5G (Exynos)
 
 ## How-to compile it:
 
