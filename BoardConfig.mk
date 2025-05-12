@@ -127,7 +127,8 @@ BOARD_USES_METADATA_PARTITION := true
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
-TW_DEVICE_VERSION := 0_PrimeX
+TW_DEVICE_VERSION := Galaxy S24
+TW_MTP_DEVICE := Galaxy S24
 TW_FRAMERATE := 120
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
 TW_MAX_BRIGHTNESS := 612
