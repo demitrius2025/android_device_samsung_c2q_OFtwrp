@@ -5,6 +5,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+PRODUCT_RELEASE_NAME := e1s
+DEVICE_PATH := device/samsung/e1s
+
+# Inherit any OrangeFox-specific settings
+$(call inherit-product-if-exists, $(DEVICE_PATH)/fox_$(PRODUCT_RELEASE_NAME).mk)
+
 LOCAL_PATH := device/samsung/e1s
 
 # Dynamic partitions
