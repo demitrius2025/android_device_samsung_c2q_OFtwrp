@@ -1,6 +1,6 @@
 #	 This file is part of the OrangeFox Recovery Project
 # 	 Copyright (C) 2021-2025 The OrangeFox Recovery Project
-#	 Copyright (C) 2024 The Android Open Source Project
+#	 Copyright (C) 2025 The Android Open Source Project
 #
 #	OrangeFox is free software: you can redistribute it and/or modify
 #	it under the terms of the GNU General Public License as published by
@@ -37,8 +37,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
  # Fox-specific flags
  export OF_QUICK_BACKUP_LIST="/boot;/data;/super;/cache;/efs;/modem;/recovery;"
- ##export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/bootdevice/by-name/recovery_a"
- 
+
  
  # OrangeFox Addons
  export FOX_ENABLE_APP_MANAGER=1
@@ -54,21 +53,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
  # Version & Variant
  export FOX_MAINTAINER_PATCH_VERSION="12"
- export FOX_VARIANT="A14"
+ export FOX_VARIANT="A15"
  export FOX_BUILD_TYPE="Stable"
-
- # A/B partitioning
- # export FOX_AB_DEVICE=1
- ##export FOX_VIRTUAL_AB_DEVICE=1
- 
- # Store settings at /data/recovery instead of internal storage
- ##export FOX_USE_DATA_RECOVERY_FOR_SETTINGS=1
-
- # Security (Disables MTP&ADB during password prompt)
-
- # Debugging
- ##export FOX_RESET_SETTINGS=0
- ##export FOX_INSTALLER_DEBUG_MODE=1
 
  # Other..
  export TW_DEFAULT_LANGUAGE="en"
