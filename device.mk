@@ -34,6 +34,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.recovery.s5e9945.rc \
     init.recovery.samsung.rc \
+    ueventd.rc \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
