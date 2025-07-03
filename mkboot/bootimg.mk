@@ -1,4 +1,4 @@
-PATCH_AVB:=device/samsung/e1s/modavb.py
+PATCH_AVB:= device/samsung/c2q/modavb.py
 
 FLASH_IMAGE_TARGET ?= $(PRODUCT_OUT)/recovery.tar
 	
